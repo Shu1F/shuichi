@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-zen-kaku: var(--font-zen-kaku);
+}
+
 :root {
   --background: #ffffff;
   --foreground: #000000;
