@@ -4,7 +4,11 @@ const navItems = [
   { label: "ABOUT", href: "/about" },
   { label: "WORKS", href: "/works" },
   { label: "SKILLS", href: "/skills" },
-  { label: "RESUME", href: "/resume" },
+  {
+    label: "RESUME",
+    href: "https://shuichi-fujiike.notion.site/resume",
+    external: true,
+  },
 ];
 
 export default function Home() {
