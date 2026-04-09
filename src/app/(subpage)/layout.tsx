@@ -12,7 +12,7 @@ export default function SubPageLayout({
   const pageName = pathname.slice(1).toUpperCase();
 
   return (
-    <div className="flex flex-1 flex-col px-16">
+    <div className="flex flex-1 flex-col px-16 max-w-screen-sm mx-auto w-full">
       <nav className="py-12">
         <Link
           href="/"

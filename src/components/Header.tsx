@@ -10,7 +10,7 @@ export default function Header() {
   }
 
   return (
-    <header className="flex items-center justify-end px-16 py-12">
+    <header className="flex items-center justify-end px-16 py-12 max-w-screen-sm mx-auto w-full">
       <button
         type="button"
         onClick={toggleTheme}

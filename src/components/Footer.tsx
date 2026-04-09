@@ -41,8 +41,8 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="flex items-center justify-center px-16 py-12">
-      <div className="flex gap-10">
+    <footer className="flex items-center justify-center px-16 py-12 max-w-screen-sm mx-auto w-full">
+      <div className="flex gap-16">
         {socialLinks.map((link) => (
           <a
             key={link.label}
