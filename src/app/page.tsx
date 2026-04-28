@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 
 const navItems = [
@@ -19,7 +21,8 @@ export default function Home() {
           <Link
             key={item.href}
             href={item.href}
-            className={`text-sm uppercase tracking-[1.4px] text-black dark:text-white${index > 0 ? " mt-24" : ""}`}
+            className={`text-sm uppercase tracking-[1.4px] text-black dark:text-white animate-fade-up${index > 0 ? " mt-24" : ""}`}
+            style={{ animationDelay: `${index * 0.15}s` }}
           >
             {item.label}
           </Link>
