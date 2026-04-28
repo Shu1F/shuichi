@@ -21,7 +21,7 @@ export default function SubPageLayout({
           ← {pageName}
         </Link>
       </nav>
-      {children}
+      <div className="animate-fade-up">{children}</div>
     </div>
   );
 }
