@@ -50,20 +50,25 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="flex items-center justify-center px-16 py-12 max-w-screen-sm mx-auto w-full">
-      <div className="flex gap-16">
-        {socialLinks.map((link) => (
-          <a
-            key={link.label}
-            href={link.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={link.label}
-            className="opacity-60 text-black dark:text-white hover:opacity-100 transition-opacity"
-          >
-            {link.icon}
-          </a>
-        ))}
+    <footer className="flex items-center justify-center px-16 pt-12 pb-6 max-w-screen-sm mx-auto w-full">
+      <div className="flex flex-col items-center gap-8">
+        <div className="flex gap-16">
+          {socialLinks.map((link) => (
+            <a
+              key={link.label}
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={link.label}
+              className="opacity-60 text-black dark:text-white hover:opacity-100 transition-opacity"
+            >
+              {link.icon}
+            </a>
+          ))}
+        </div>
+        <p className="text-[11px] tracking-[1.1px] uppercase opacity-40 text-black dark:text-white">
+          ©︎ {new Date().getFullYear()} shuichi
+        </p>
       </div>
     </footer>
   );
