@@ -9,7 +9,7 @@ export default function SubPageLayout({
   children: React.ReactNode;
 }>) {
   const pathname = usePathname();
-  const pageName = pathname.slice(1).toUpperCase();
+  const pageName = pathname.split("/").filter(Boolean)[0]?.toUpperCase();
 
   return (
     <div className="flex flex-1 flex-col px-16 max-w-screen-sm mx-auto w-full">

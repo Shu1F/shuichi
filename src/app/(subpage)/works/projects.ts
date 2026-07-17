@@ -28,8 +28,7 @@ export const projects: Project[] = [
   },
   {
     title: "Go GitHub CLI",
-    description:
-      "PRコメントを収集・整理し、Notionへ反映するためのCLIツール",
+    description: "PRコメントを収集・整理し、Notionへ反映するためのCLIツール",
     tags: ["Go", "Cobra", "GitHub API"],
     links: {
       site: "https://github.com/Shu1F/go-github-cli",

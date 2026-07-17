@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Zen_Kaku_Gothic_New } from "next/font/google";
-import { ThemeProvider } from "@/components/ThemeProvider";
-import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import { ThemeProvider } from "@/components/ThemeProvider";
 import "./globals.css";
 
 const zenKaku = Zen_Kaku_Gothic_New({

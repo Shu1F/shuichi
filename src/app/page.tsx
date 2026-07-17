@@ -6,6 +6,7 @@ const navItems = [
   { label: "ABOUT", href: "/about" },
   { label: "WORKS", href: "/works" },
   { label: "SKILLS", href: "/skills" },
+  { label: "CAREER", href: "/career" },
   {
     label: "BLOG",
     href: "https://qiita.com/Shu1F",
