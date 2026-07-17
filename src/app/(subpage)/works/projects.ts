@@ -27,12 +27,23 @@ export const projects: Project[] = [
     },
   },
   {
-    title: "GUEST SHINJUKU",
+    title: "Go GitHub CLI",
     description:
-      "飲食店のWEBサイト。アニメーションとデザインにこだわって作成しました。",
-    tags: ["TypeScript", "Next.js", "React", "TailwindCSS"],
+      "PRコメントを収集・整理し、Notionへ反映するためのCLIツール",
+    tags: ["Go", "Cobra", "GitHub API"],
     links: {
-      site: "https://www.guest-shinjuku.jp/",
+      site: "https://github.com/Shu1F/go-github-cli",
     },
   },
+  /*
+    {
+      title: "GUEST SHINJUKU",
+      description:
+        "飲食店のWEBサイト。アニメーションとデザインにこだわって作成しました。",
+      tags: ["TypeScript", "Next.js", "React", "TailwindCSS"],
+      links: {
+        site: "https://www.guest-shinjuku.jp/",
+      },
+    },
+  */
 ];
