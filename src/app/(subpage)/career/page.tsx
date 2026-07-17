@@ -41,9 +41,6 @@ export default function CareerPage() {
         <h1 className="text-sm uppercase tracking-[1.4px] text-black dark:text-white">
           Career
         </h1>
-        <p className="text-sm leading-[25.2px] opacity-80 text-black dark:text-white">
-          学歴と開発経験の記録。
-        </p>
       </header>
 
       <ol className="relative -mx-6 sm:mx-0">
