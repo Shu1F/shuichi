@@ -8,6 +8,11 @@ const navItems = [
   { label: "SKILLS", href: "/skills" },
   { label: "CAREER", href: "/career" },
   {
+    label: "BLOG",
+    href: "https://qiita.com/Shu1F",
+    external: true,
+  },
+  {
     label: "RESUME",
     href: "https://shuichi-fujiike.notion.site/resume",
     external: true,
@@ -22,6 +27,8 @@ export default function Home() {
           <Link
             key={item.href}
             href={item.href}
+            target={item.external ? "_blank" : undefined}
+            rel={item.external ? "noopener noreferrer" : undefined}
             className={`text-sm uppercase tracking-[1.4px] text-black dark:text-white animate-fade-up${index > 0 ? " mt-24" : ""}`}
             style={{ animationDelay: `${index * 0.15}s` }}
           >

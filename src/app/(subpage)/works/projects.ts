@@ -10,11 +10,40 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "GUEST SHINJUKU",
-    description: "...",
-    tags: ["TypeScript", "Next.js", "React", "TailwindCSS"],
+    title: "WAI",
+    description: "GDGOCハッカソンで開発した就活支援アプリです。",
+    tags: ["Flutter", "Go(echo)", "wire", "Open API", "Firebase", "docker"],
     links: {
-      site: "https://www.guest-shinjuku.jp/",
+      site: "https://github.com/S-s-dev-team/wAI",
     },
   },
+  {
+    title: "Go Todo App",
+    description:
+      "OpenAPI のキャッチアップを目的として開発しました。Goのフレームワークは Gin を使用しており、ORMは Ent を使用しています。",
+    tags: ["Go", "echo", "Open API", "ent", "docker"],
+    links: {
+      site: "https://github.com/Shu1F/openapi_go_todo",
+    },
+  },
+  {
+    title: "Go GitHub CLI",
+    description:
+      "PRコメントを収集・整理し、Notionへ反映するためのCLIツール",
+    tags: ["Go", "Cobra", "GitHub API"],
+    links: {
+      site: "https://github.com/Shu1F/go-github-cli",
+    },
+  },
+  /*
+    {
+      title: "GUEST SHINJUKU",
+      description:
+        "飲食店のWEBサイト。アニメーションとデザインにこだわって作成しました。",
+      tags: ["TypeScript", "Next.js", "React", "TailwindCSS"],
+      links: {
+        site: "https://www.guest-shinjuku.jp/",
+      },
+    },
+  */
 ];
