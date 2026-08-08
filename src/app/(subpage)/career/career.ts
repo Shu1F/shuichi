@@ -38,12 +38,23 @@ export const careerYears: CareerYear[] = [
       },
       {
         period: { start: "4月" },
-        title: "株式会社ジーニー2Daysインターン",
-        description: "ReactとGoを用いた開発に携わっています。",
+        title: "株式会社ジーニー",
+        description: "2Daysインターン",
         showOnOverview: true,
         labels: ["React", "Go"],
         link: {
           href: "https://geniee.co.jp/",
+          external: true,
+        },
+      },
+      {
+        period: { start: "8月" },
+        title: "Sansan株式会社",
+        description: "長期就業型インターン",
+        showOnOverview: true,
+        labels: ["Typescript", "NestJS"],
+        link: {
+          href: "https://jp.corp-sansan.com/",
           external: true,
         },
       },
@@ -74,9 +85,10 @@ export const careerYears: CareerYear[] = [
       },
       {
         period: { start: "6月", end: "2026年3月" },
-        title: "株式会社ドクターズプライムインターン",
+        title: "株式会社ドクターズプライム",
+        description: "長期インターン",
         showOnOverview: true,
-        labels: ["React", "Next.js", "Go"],
+        labels: ["Typescript", "React", "Next.js", "Go", "GraphQL"],
         link: {
           href: "https://drsprime.com/",
           external: true,
