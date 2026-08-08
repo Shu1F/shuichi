@@ -18,6 +18,11 @@ function OverviewEvent({ detail }: { detail: CareerDetail }) {
         </span>
         <span>{detail.title}</span>
       </p>
+      {detail.description && (
+        <p className="text-xs leading-[21.6px] opacity-70">
+          {detail.description}
+        </p>
+      )}
       {detail.labels && (
         <div className="flex flex-wrap gap-x-4 gap-y-1">
           {detail.labels.map((label) => (
@@ -49,6 +54,8 @@ export default function CareerPage() {
           const overviewDetails = item.details.filter(
             (detail) => detail.showOnOverview,
           );
+          const hasAdditionalDetails =
+            overviewDetails.length < item.details.length;
 
           return (
             <li
@@ -73,12 +80,14 @@ export default function CareerPage() {
                 {overviewDetails.map((detail) => (
                   <OverviewEvent key={detail.title} detail={detail} />
                 ))}
-                <Link
-                  href={`/career/${item.year}`}
-                  className="mt-1 w-fit self-end text-[11px] tracking-[0.55px] underline underline-offset-4 transition-opacity duration-300 hover:opacity-60 focus-visible:opacity-60"
-                >
-                  {item.year}年の詳細を見る
-                </Link>
+                {hasAdditionalDetails && (
+                  <Link
+                    href={`/career/${item.year}`}
+                    className="mt-1 w-fit self-end text-[11px] tracking-[0.55px] underline underline-offset-4 transition-opacity duration-300 hover:opacity-60 focus-visible:opacity-60"
+                  >
+                    {item.year}年の詳細を見る
+                  </Link>
+                )}
               </div>
             </li>
           );
